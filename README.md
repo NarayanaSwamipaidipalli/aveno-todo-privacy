@@ -38,7 +38,7 @@ The policy describes the app as it existed in the Android source on 13 November 
 | --- | --- |
 | Task storage | Room database in app-private storage; no login, backend, Firebase or sync |
 | Preferences | Jetpack DataStore, on device |
-| Android Auto Backup | Disabled (`android:allowBackup="false"`) |
+| Android Auto Backup and device transfer | Disabled (`android:allowBackup="false"`, everything excluded in `data_extraction_rules.xml`) |
 | Export / restore | User-initiated, unencrypted JSON through the Android file picker |
 | Ads | Google Mobile Ads SDK 25.1.0, banner only, Home and Lists screens, user can switch off |
 | Consent | Google User Messaging Platform SDK 4.0.0; ads requested only after the consent check |
